@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: skyblue;
+}
+
+#main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box{
+    width: 40%;
+    height: 400px;
+    background: rgb(95, 152, 187);
+    box-shadow: 0px 0px 5px gray;
+    padding: 15px;
+}
+
+#pass-box{
+    width: 100%;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    background: white;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+#btn{
+    width: 100%;
+    margin: 20px 0px;
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(18, 25, 28);
+    color: white;
+}
