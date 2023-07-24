@@ -12,10 +12,7 @@ item.addEventListener("keyup",
 
 let addToDo = (item) => {
     let listItem = document.createElement("li");
-    listItem.innerHTML = `
-    ${item}
-    <i class="fa-solid fa-xmark"></i>
-    `
+    listItem.innerHTML = `${item}<i class="fa-solid fa-xmark"></i>`
     listItem.addEventListener(
         "click",
         function () {
@@ -29,6 +26,5 @@ let addToDo = (item) => {
             listItem.remove();
         }
     )
-
     toDoBox.appendChild(listItem);
 }
