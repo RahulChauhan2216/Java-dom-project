@@ -14,8 +14,6 @@ let saveNotes = () => {
   } else {
     localStorage.setItem("notes", JSON.stringify(data));
   }
-
-  //   console.log(data);
 };
 
 addBtn.addEventListener("click", function () {
@@ -40,7 +38,7 @@ let addNote = (text = "") => {
     saveNotes();
   });
 
-  note.querySelector("textarea").addEventListener("onchange", () => {
+  note.querySelector("textarea").addEventListener("focusout", () => {
     saveNotes();
   });
 

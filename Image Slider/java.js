@@ -11,7 +11,6 @@ let slideImage = () => {
   });
 };
 
-
 let prev = () => {
   if (counter == 0) {
     counter = slide.length - 1;
@@ -32,17 +31,15 @@ let nex = () => {
   }
 };
 
+// // **************** For Auto-Pic ***********
 
+// // let auto = () => {
+// //     counter++
+// //     slideImage();
+// //     if (counter == slide.length) {
+// //         counter = 0;
+// //         slideImage();
+// //     }
+// // }
 
-// **************** For Auto-Pic ***********
-
-// let auto = () => {
-//     counter++
-//     slideImage();
-//     if (counter == slide.length) {
-//         counter = 0;
-//         slideImage();
-//     }
-// }
-
-// setInterval(auto, 3000);
+// // setInterval(auto, 2000);
